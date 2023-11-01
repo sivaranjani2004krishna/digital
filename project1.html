@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Name-porfolio</title>
+        <style>
+            body
+                {
+                  font-family:Arial,sans-serif;
+                  margin:0;
+                  padding:0;
+                  background-color:#beb6b6;
+                }
+                header
+                {
+                    background:color #333;
+                    color: #2e42f7;
+                    text-align:center;
+                    padding:2rem 0;
+                    position: relative;
+                    padding:2rem 0;
+                    position: relative; 
+                }
+                .header-content h1
+                {
+                    font-size:2.5rem;
+                }
+                nav
+                {
+                    background-color:#333;
+                    color:#fff;
+                    text-align:center;
+                }
+                nav u1 
+                {
+                  list-style-type:none;
+                  padding:10px;
+                }
+                nav u1 li
+                {
+                    display:inline;
+                    margin: 0 20px;
+                }
+                nav u1 li a
+                {
+                    text-decoration:none;
+                    color:#fff;
+                }
+                .section-content
+                {
+                    background-color:#fff;
+                    padding:2rem;
+                    margin:1rem;
+                    border-radius:20px;
+                    box-shadow:0 0 10px rgba(0,0,0,0,1);
+                }
+                footer
+                {
+                    text-align:center;
+                    padding 1rem 0;
+                    background-color:#333;
+                    color:#fff;
+        
+                u1
+                 {
+                    list-style-type:lower-roman;
+                    padding-left:20px;
+                 }
+            </style>
+            </head>
+            <header>   
+                
+               
+                <h1>Sivaranjani</h1>
+                <p>college student</p>
+            
+        </header>
+        <nav>
+            <u1>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </u1>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Manonmaniam Sundaranar University-B.Sc[computer science]</p>
+            </div>
+        </section>
+        <section id="education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <p>Manonmaniam Sundaranar University-B.Sc[computer science]</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <u1>
+                    <li>python</li>
+                    <li>HTML</li>
+                    <li>Java</li>
+                    <li>css</li>
+                </u1>
+            </div>
+        </section>
+        <footer>
+            <p>&copy;2023 Sivaranjani</p>
+        </footer>
+        <script>
+             //smooth scrolling to section when clicking on navigation links
+             document.querySelectorAll('[href="#"]').forEach(anchor=> {
+                anchor.addEvenListener('a[href="#"]').function(e){
+                    e.prevenDefault();
+                    const targetId=this.getAttribute('href').substring(1);
+                    if(targetElement){
+                        window.scrollTo({
+                            top:targetElement.offsetTop,
+                            behavior:'smooth'
+                        });
+                    }
+                };
+            };
+        </script>
+        </html>
+
+            
